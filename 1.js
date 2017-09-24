@@ -1,6 +1,7 @@
-document.getElementById("ok").onclick=f1;
-function f1 () {
-var a = document.getElementById('user').value;
+document.getElementById('get_result').onclick=fAge;
+var a = document.getElementById('user_age').value;
+a=parseInt(a);
+function fAge () {
 if(a<=17){
 		var b='20'+a;
 		b=parseInt(b);
@@ -18,6 +19,7 @@ if(a<=17){
 	}
 	else {
 		var age = 2017-a;
+		age = parseInt(age);
 		alert('Ваш возраст '+age+' лет');
 	}
 }
@@ -28,6 +30,8 @@ document.getElementById("ok2").onclick=f2;
 function f2 () {
 	var a = document.getElementById('i1').value;
 	var b = document.getElementById('i2').value;
+	a=parseInt(a);
+	b=parseInt(b);
 	if(a>b){
 		alert(a);
 	}
@@ -117,7 +121,7 @@ function f1 () {
 	for (var i=0; i<b; i=i+1){
 	sum=sum*a;
 	}
-result.innerHTML+=sum;
+result.innerHTML=sum;
 }
 
 // Task#10
