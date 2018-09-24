@@ -1,7 +1,7 @@
 document.getElementById('get_result').onclick=fAge;
+function fAge () {
 var a = document.getElementById('user_age').value;
 a=parseInt(a);
-function fAge () {
 if(a<=17){
 		var b='20'+a;
 		b=parseInt(b);
